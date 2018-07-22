@@ -1,15 +1,15 @@
 [SddmGreeterTheme]
-Name=Chili for Plasma
-Description=The hottest theme for KDE Plasma
-Author=Marian Alexander Arlt
+Name=JaguOS Login Theme
+Description=The JaguOS login theme
+Author=Jonas Jaguar
 License=GPLv3
 Type=sddm-theme
-Version=0.5.1
-Website=https://github.com/MarianArlt/kde-plasma-chili
+Version=0.1.0
+Website=https://github.com/jonasjaguar/jaguos-login-theme
 Screenshot=preview.png
 MainScript=Main.qml
 ConfigFile=theme.conf
 TranslationsDirectory=translations
 Email=marianarlt@icloud.com
-Theme-Id=plasma-chili
+Theme-Id=jaguos-login
 Theme-API=2.0

@@ -58,11 +58,11 @@ PlasmaCore.ColorScope {
         visible: y > 0
         y: height / 2.5
         anchors {
-            right: parent.right
+            right: parent.horizontalCenter
             top: parent.top
         }
-        anchors.rightMargin: 14
-        anchors.topMargin: 10
+        anchors.rightMargin: -width / 2
+        anchors.topMargin: parent.height / 9
     }
 
 

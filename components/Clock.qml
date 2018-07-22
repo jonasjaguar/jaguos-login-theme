@@ -23,18 +23,23 @@ import QtQuick.Layouts 1.1
 import org.kde.plasma.core 2.0
 import org.kde.plasma.components 2.0
 
-RowLayout {
+ColumnLayout {
+    spacing: 0
     KeyboardButton {}
     Battery {}
     Label {
         font.family: "Noto Sans"
-        font.pointSize: root.height / 75
-        text: Qt.formatDateTime(timeSource.data["Local"]["DateTime"], " ddd dd MMMM,")
+        font.pointSize: root.height / 45
+        horizontalAlignment: Text.AlignHCenter
+        Layout.alignment: "AlignVCenter | AlignHCenter"
+        text: Qt.formatDateTime(timeSource.data["Local"]["DateTime"], "ddd dd MMMM")
         renderType: Text.QtRendering
     }
     Label {
         font.family: "Noto Sans"
-        font.pointSize: root.height / 75
+        font.pointSize: root.height / 20
+        horizontalAlignment: Text.AlignHCenter
+        Layout.alignment: "AlignVCenter | AlignHCenter"
         text: Qt.formatTime(timeSource.data["Local"]["DateTime"])
         renderType: Text.QtRendering
     }
