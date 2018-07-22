@@ -1,4 +1,4 @@
-![Screenshot of the theme](preview_multi_user.png "Preview")
+![Screenshot of the theme](preview.png "Preview")
 
 # JaguOS login theme for KDE Plasma
 
