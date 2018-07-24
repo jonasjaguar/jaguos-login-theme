@@ -35,7 +35,7 @@ The JaguOS Login Theme is now customizable through its `theme.conf` file. You ca
   * Adjust the size of the user image:
   `changeAvatarPixelSize=`
 
-You might see some grey pixels around your user image which is caused by the anti-aliasing of the opacity mask. You may change the fill color of the mask that resides in `components/artwork/mask.svg` to a color that better matches with your user images colors. Do **not** change the *opacity* of the mask. Take note that this might affect other user images with different colors present on your system.
+You might see some grey pixels around your user image which is caused by the anti-aliasing of the opacity mask. You may change the fill colour of the mask that resides in `components/artwork/mask.svg` to a colour that better matches with your user images colours. Do **not** change the *opacity* of the mask. Take note that this might affect other user images with different colours present on your system.
 
 ### License
 
