@@ -18,11 +18,11 @@ This will extract all the files to a folder called jaguos-login inside of the th
 ```
 $ sudo nano /usr/lib/sddm/sddm.conf.d/sddm.conf
 ```
-In the `[Theme]` section set `Current=jaguos-login`. For a more detailed description please refer to the [Arch wiki on sddm](https://wiki.archlinux.org/index.php/SDDM). Note that, depending on your system setup, a duplicate configuration may exist in `/etc/sddm.conf`. Usually this path takes preference so you want to set the above line in this file if you have it.
+In the `[Theme]` section set `Current=jaguos-login`. For a more detailed description please refer to the [Arch wiki on sddm](https://wiki.archlinux.org/index.php/SDDM). Note that, depending on your system setup, a duplicate configuration may exist in `/etc/sddm.conf`. Usually, this path takes preference so you want to set the above line in this file if you have it.
 
 ### Theming the theme
 
-The JaguOS Login Theme is now customizable through its `theme.conf` file. You can now alter the intensity of the background blur or even not have any blur at all! Also there may be screens so big that the avatar just not looks correct. Change it in the config to something that better suits your screen!
+The JaguOS Login Theme is now customizable through its `theme.conf` file. You can now alter the intensity of the background blur or even not have any blur at all! Also, there may be screens so big that the avatar just not looks correct. Change it in the config to something that better suits your screen!
 
   * Change the path of the background image relative to the themes directory:
   `background=components/artwork/background.jpg`
@@ -35,7 +35,7 @@ The JaguOS Login Theme is now customizable through its `theme.conf` file. You ca
   * Adjust the size of the user image:
   `changeAvatarPixelSize=`
 
-You might see some grey pixels around your user image which is caused by the the anti-aliasing of the opacity mask. You may change the fill color of the mask that resides in `components/artwork/mask.svg` to a color that better matches with your user images colors. Do **not** change the *opacity* of the mask. Take note that this might affect other user images with different colors present on your system.
+You might see some grey pixels around your user image which is caused by the anti-aliasing of the opacity mask. You may change the fill color of the mask that resides in `components/artwork/mask.svg` to a color that better matches with your user images colors. Do **not** change the *opacity* of the mask. Take note that this might affect other user images with different colors present on your system.
 
 ### License
 
@@ -43,4 +43,4 @@ This project is licensed under the GPLv3 License - see the [LICENSE](LICENSE.md)
 
 ### Acknowledgments
 
-Original code is taken from KDE plasmas breeze theme. In specific the SDDM login theme written by [David Edmundson](davidedmundson@kde.org).
+The original code is taken from KDE plasmas breeze theme. In specific the SDDM login theme written by [David Edmundson](davidedmundson@kde.org).
