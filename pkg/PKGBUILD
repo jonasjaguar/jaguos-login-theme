@@ -1,0 +1,24 @@
+# Maintainer: Jonas Jaguar <jonasjaguar@jagudev.net>
+
+pkgname=jagudev-jaguos-login-theme
+pkgver=1.0
+pkgrel=1
+pkgdesc="The JaguOS Login Theme"
+arch=('any')
+url="https://jagudev.net"
+license=('GPL3')
+depends=('sddm')
+#makedepends=()
+#checkdepends=()
+#optdepends=()
+#options=()
+source=("https://github.com/jonasjaguar/jaguos-login-theme/archive/$pkgver.tar.gz")
+md5sums=('SKIP')
+validpgpkeys=()
+
+
+package() {
+	cd  "${srcdir}/"
+	mkdir -p ${pkgdir}/usr/share/sddm/themes/
+	cp -r jaguos-login-theme-${pkgver} "${pkgdir}/usr/share/sddm/themes/"
+}
